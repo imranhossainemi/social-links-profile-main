@@ -24,8 +24,15 @@
       box-sizing: border-box;
     }
 
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
     main {
-      max-width: 1440px;
+      min-width: 1440px;
       height: 100vh;
       background-color: var(--neutral-off-black);
       font-family: url('/assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
@@ -102,7 +109,7 @@
 
     @media screen and (max-width: 850px) {
       main {
-        min-width: 375px;
+        max-width: 375px;
       }
 
       .profile-card {
